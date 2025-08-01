@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  scigility-api:
+    image: scigility-api:prod
+    build: .
+    command: gunicorn -k uvicorn.workers.UvicornWorker app.main:app -b 0.0.0.0:8009 -w 4 --timeout 120
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+    expose:
+      - "8009"
+    env_file:
+      - .env
+    environment:
+      JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+      PATH: /usr/lib/jvm/java-17-openjdk-amd64/bin:$PATH
+    networks:
+      - airflow-spark-net
+
+networks:
+  airflow-spark-net:
+    external: true
