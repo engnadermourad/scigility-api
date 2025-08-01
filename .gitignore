@@ -1,2 +1,17 @@
 .env
-scigility/app/.Trash-1000*
+# Ignore Jupyter Notebook checkpoints
+**/.ipynb_checkpoints/
+
+# Ignore trash folders
+**/.Trash-1000/
+
+# Ignore Python cache files
+**/__pycache__/
+
+# Ignore private SSH keys
+id_ed25519_scigility
+id_ed25519_scigility.pub
+
+# Ignore system files (optional)
+.DS_Store
+Thumbs.db

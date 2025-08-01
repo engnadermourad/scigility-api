@@ -34,3 +34,18 @@ ssh -T git@github.com
 git remote set-url origin git@github.com:engnadermourad/scigility-api.git
 git remote -v
 git push -u origin main
+
+
+git add .
+git commit -m "tech challenge"
+git push
+
+
+# Remove cached files from previous commits
+git rm -r --cached .
+# Add everything again, respecting the new .gitignore
+git add .
+# Commit the changes
+git commit -m "Cleaned up ignored files and updated .gitignore"
+# Push to GitHub
+git push
