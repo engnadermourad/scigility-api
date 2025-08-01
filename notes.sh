@@ -49,3 +49,8 @@ git add .
 git commit -m "Cleaned up ignored files and updated .gitignore"
 # Push to GitHub
 git push
+
+
+git remote set-url origin git@github.com:engnadermourad/scigility-api.git
+
+

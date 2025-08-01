@@ -15,3 +15,5 @@ id_ed25519_scigility.pub
 # Ignore system files (optional)
 .DS_Store
 Thumbs.db
+
+notes.sh
