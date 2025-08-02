@@ -70,15 +70,12 @@
 - Docker & Docker Compose
 - Terraform CLI
 - AWS CLI (configured)
-- Python 3.10+
+- Python 3.11+
 - `make`
 
 ### Setup Instructions
 
 ```bash
-# Clone the repo
-git clone https://github.com/your-org/your-repo.git
-cd your-repo
 
 # Provision infrastructure
 cd terraform
@@ -88,4 +85,4 @@ terraform apply
 # Build and push services
 cd ..
 make build
-make deploy
+make up
