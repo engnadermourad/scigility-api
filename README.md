@@ -58,6 +58,9 @@
 ### End-to-End Architecture Diagram
 ![Architecture Diagram](images/architecture_diagram.png)
 
+### CI CD workflow excution
+![CI/CD Workflow](images/git-workflow-ci-cd.png)
+
 ---
 
 ## Quick Start
